@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-15T15:42:37 IST" name="test1" finished-at="2021-08-15T15:42:57 IST" duration-ms="20772">
+    <groups>
+    </groups>
+    <test started-at="2021-08-15T15:42:37 IST" name="Chrome_Browser" finished-at="2021-08-15T15:42:57 IST" duration-ms="20772">
+      <class name="tests.BookFlight">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:tests.BookFlight@1ddf84b8]" started-at="2021-08-15T15:42:37 IST" name="launchBrowser" finished-at="2021-08-15T15:42:43 IST" duration-ms="6325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookFlight@1ddf84b8]" started-at="2021-08-15T15:42:43 IST" name="setup" finished-at="2021-08-15T15:42:43 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchForFlights(databuilder.BookingDetailsBuilder)[pri:0, instance:tests.BookFlight@1ddf84b8]" started-at="2021-08-15T15:42:43 IST" name="searchForFlights" data-provider="bookFlight" finished-at="2021-08-15T15:42:50 IST" duration-ms="7072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[databuilder.BookingDetailsBuilder@21ab988f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForFlights -->
+        <test-method signature="chooseLowestPricedAirline(databuilder.BookingDetailsBuilder)[pri:0, instance:tests.BookFlight@1ddf84b8]" started-at="2021-08-15T15:42:50 IST" name="chooseLowestPricedAirline" data-provider="bookFlight" finished-at="2021-08-15T15:42:51 IST" depends-on-methods="tests.BookFlight.searchForFlights" duration-ms="1167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[databuilder.BookingDetailsBuilder@62e6a3ec]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseLowestPricedAirline -->
+        <test-method signature="purchaseFlightTicket(databuilder.BookingDetailsBuilder)[pri:0, instance:tests.BookFlight@1ddf84b8]" started-at="2021-08-15T15:42:51 IST" name="purchaseFlightTicket" data-provider="bookFlight" finished-at="2021-08-15T15:42:55 IST" depends-on-methods="tests.BookFlight.chooseLowestPricedAirline" duration-ms="3740" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[databuilder.BookingDetailsBuilder@65fd6708]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseFlightTicket -->
+        <test-method signature="bookingConfirmed()[pri:0, instance:tests.BookFlight@1ddf84b8]" started-at="2021-08-15T15:42:55 IST" name="bookingConfirmed" finished-at="2021-08-15T15:42:55 IST" depends-on-methods="tests.BookFlight.purchaseFlightTicket" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingConfirmed -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.BookFlight@1ddf84b8]" started-at="2021-08-15T15:42:55 IST" name="closeBrowser" finished-at="2021-08-15T15:42:57 IST" duration-ms="2122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.BookFlight@1ddf84b8]" started-at="2021-08-15T15:42:57 IST" name="cleanup" finished-at="2021-08-15T15:42:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- tests.BookFlight -->
+    </test> <!-- Chrome_Browser -->
+  </suite> <!-- test1 -->
+</testng-results>
